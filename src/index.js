@@ -1,12 +1,11 @@
 module.exports = function reverse (n) {
 
-    let i = n;
-      
-    while (i <= reverse && i>0) {
-        console.log(i);
-        i = i - 1;
+    let nStr = n.toString();
+    let reversedStr = '';
+    for (let i = nStr.length - 1; i >= 0; i--) {
+        reversedStr += nStr[i];
     }
-    console.log('finished!');
+     return parseInt(reversedStr);
+}
     
-    };
-
+    
